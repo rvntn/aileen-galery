@@ -1,0 +1,165 @@
+body {
+    background: linear-gradient(180deg, #FBCDC0, transparent);
+    min-height: 100vh;
+}
+
+/* intro */
+
+#intro {
+    margin-top: -10vh;
+}
+
+#intro .pic {
+    position: absolute;
+    z-index: -1;
+}
+
+#intro img {
+    max-width: 50vh;
+    opacity: 0.5;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* sns */
+.icons a {
+    gap: 5px;
+    width: 15vw;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #intro .pic {
+        position: initial;
+    }
+
+    #intro img {
+        display: initial;
+        max-width: 20vw;
+        opacity: 100%;
+    }
+
+    .subtitle {
+        font-size: 2.4vw;
+    }
+
+    .icons a {
+        margin: 5px;
+        width: 4vw;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Better image hover effects */
+#gallery img {
+    transition: transform 0.3s ease;
+}
+
+#gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* Modern button style */
+.icons a img {
+    transition: transform 0.2s ease;
+}
+
+.icons a:hover img {
+    transform: translateY(-3px);
+}
+
+.dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.kodchasan-extralight {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.kodchasan-light {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kodchasan-regular {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kodchasan-medium {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.kodchasan-semibold {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.kodchasan-bold {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.kodchasan-extralight-italic {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.kodchasan-light-italic {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.kodchasan-regular-italic {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.kodchasan-medium-italic {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.kodchasan-semibold-italic {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.kodchasan-bold-italic {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}

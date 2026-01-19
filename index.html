@@ -2,69 +2,98 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Aileen's Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery-bundle.min.css">
 </head>
 
 <body>
-    <nav>
-        <div class="logo">Aileen's Gallery</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#sns">Contact</a></li>
+    <nav
+        class="flex justify-between items-center bg-black/75 text-white text-lg sticky top-0 z-50 px-6 py-4 kodchasan-regular">
+        <div class="font-bold text-xl">Aileen's Gallery</div>
+        <ul class="flex space-x-6">
+            <li><a href="#" class="hover:text-pink-300 transition">Home</a></li>
+            <li><a href="#gallery" class="hover:text-pink-300 transition">Gallery</a></li>
+            <li><a href="#sns" class="hover:text-pink-300 transition">Contact</a></li>
         </ul>
     </nav>
-    <div id="intro">
-        <div class="text">
-            <div><span>Hi, I'm Aileen.</span></div>
-            <div><span>Digital <span class="art">artist</span></span></div>
-            <div><small>Creating charming character arts</small></div>
+
+    <div id="intro" class="flex flex-col md:flex-row items-center justify-center min-h-screen px-6 py-12">
+        <div class="text text-center md:text-left mb-10 md:mb-0 md:mr-12" data-aos="fade-right">
+            <h1 class="text-5xl md:text-7xl font-bold dm-serif-display-regular">Hi, I'm Aileen.</h1>
+            <h2 class="text-4xl md:text-6xl mt-4 dm-serif-display-regular">Digital <span
+                    class="art pacifico-regular text-pink-500">artist</span></h2>
+            <p class="text-xl md:text-2xl mt-6 text-gray-600 pacifico-regular">Creating charming character arts</p>
         </div>
-        <div class="pic"><img src="images\2688674325381704059.png"></div>
+        <div class="pic" data-aos="fade-left"><img src="images\2688674325381704059.png"></div>
     </div>
-    <div id="gallery" class="column">
-        <div class="subtitle">
-            <span>Portfolio</span>
-        </div>
-        <div class="row">
-            <img src="images\2892038791638126093_2892038787435354605.jpg" alt="#obeymesatan #obeyme">
-            <img src="images\2688676725211461276.jpg" alt="ayaya">
-            <img src="images\2537874633378785013_2537874629033619383.jpg" alt="Please support #WENDY's solo! #Like_Water #WhenThisRainStops">
-        </div>
-        <div class="row">
-            <img src="images\2964552511344500836_2964552508651648889.jpg" alt="#SAGE #ValorantArt">
-            <img src="images\3005573328183068032_3005573325012295288.jpg" alt="Don't overthink it. That's my job #VALORANT #KILLJOY">
-            <img src="images\3014697626775770917_3014697622816325316.jpg" alt="My advice? Don't get shot #NEON #VALORANT">
-        </div>
-        <div class="row">
-            <img src="images\template.png" alt="">
-            <img src="images\template.png" alt="">
-            <img src="images\template.png" alt="">
+
+    <div id="gallery" class="column px-6 py-16 bg-gradient-to-b from-transparent to-pink-50">
+        <h2 class="dm-serif-display-regular text-4xl font-bold text-center mb-12" data-aos="fade-up">Portfolio</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+            <img class="w-full h-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition duration-300 cursor-pointer"
+                src="images\2892038791638126093_2892038787435354605.jpg" alt="#obeymesatan #obeyme" data-aos="fade-up">
+            <img class="w-full h-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition duration-300 cursor-pointer"
+                src="images\2688676725211461276.jpg" alt="ayaya" data-aos="fade-up">
+            <img class="w-full h-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition duration-300 cursor-pointer"
+                src="images\2537874633378785013_2537874629033619383.jpg"
+                alt="Please support #WENDY's solo! #Like_Water #WhenThisRainStops" data-aos="fade-up">
+            <img class="w-full h-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition duration-300 cursor-pointer"
+                src="images\2964552511344500836_2964552508651648889.jpg" alt="#SAGE #ValorantArt" data-aos="fade-up">
+            <img class="w-full h-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition duration-300 cursor-pointer"
+                src="images\3005573328183068032_3005573325012295288.jpg"
+                alt="Don't overthink it. That's my job #VALORANT #KILLJOY" data-aos="fade-up">
+            <img class="w-full h-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition duration-300 cursor-pointer"
+                src="images\3014697626775770917_3014697622816325316.jpg" alt="My advice? Don't get shot #NEON #VALORANT"
+                data-aos="fade-up">
+
+            <img class="w-full h-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition duration-300 cursor-pointer"
+                src="images\template.png" alt="" data-aos="fade-up">
+            <img class="w-full h-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition duration-300 cursor-pointer"
+                src="images\template.png" alt="" data-aos="fade-up">
+            <img class="w-full h-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition duration-300 cursor-pointer"
+                src="images\template.png" alt="" data-aos="fade-up">
         </div>
     </div>
-    <div id="sns">
-        <div class="icons">
-            <a href="https://www.instagram.com/" target="_blank">
+
+    <div id="sns" class="py-20 flex justify-center">
+        <div class="icons flex space-x-8 border-b-4 border-black pb-4" data-aos="fade-up">
+            <a href="https://www.instagram.com/" target="_blank" class="m-2 hover:scale-110 transition duration-300">
                 <img src="icons/ig.svg" alt="Instagram">
             </a>
-            <a href="https://www.x.com/" target="_blank">
+            <a href="https://www.x.com/" target="_blank" class="m-2 hover:scale-110 transition duration-300">
                 <img src="icons/x.svg" alt="Twitter/X">
             </a>
-            <a href="https://wa.me/0" target="_blank">
+            <a href="https://wa.me/0" target="_blank" class="m-2 hover:scale-110 transition duration-300">
                 <img src="icons/wa.svg" alt="Whatsapp">
             </a>
         </div>
     </div>
-    <div id="myModal" class="modal">
-        <!-- The Close Button -->
-        <span class="close">&times;</span>
-
-        <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img01">
-
-        <!-- Modal Caption (Image Text) -->
-        <div id="caption"></div>
-    </div>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            delay: 100
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.getElementById('gallery'), {
+            selector: 'img',
+            download: false,
+            zoom: true,
+            counter: true
+        });
+    </script>
 </body>
